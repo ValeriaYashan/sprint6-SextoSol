@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head.ejs') %>
+    <link rel="stylesheet" href="/css/login.css">
+    <title>Login</title>
+</head>
+<body>
+    <%- include('../partials/header') %>
+    <main>
+        <div class="login">
+            <section class="login-title">
+                <h1>iniciar sesión</h1>
+                <p>Ingresá tu email y tu contraseña</p>
+            </section>
+            <form class="login-form" action="/user" method="POST">
+                <% if(locals.msg) { %>
+                    <p class="error"><%=msg %></p>
+                <% } %>
+                <input type="email" name="email" class="email-input" id="login-email" placeholder="Correo electrónico">
+                <input type="password" name="password" class="pass-input" id="login-password" placeholder="Contraseña">
+                <div class="remember">
+                    <input type="checkbox" class="remember-input" id="login-remember" name="remember">
+                    <label for="login-remember">Recordarme</label>
+                </div>
+                <button class="submit" type="submit">Ingresar</button>
+            </form>
+            <a href="/">¿Olvidaste tu contraseña?</a>
+            <section class="alt-login">
+                <p>Tambien podés iniciar sesión con:</p>
+                <div class="media-login">
+                    <a href="/login"><i class="fab fa-facebook-f"></i></a>
+                    <a href="/login"><i class="fab fa-google"></i></a>
+                </div>
+            </section>          
+    </main>
+</body>
+</html>

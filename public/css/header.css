@@ -1,0 +1,126 @@
+.navegacion {
+    background-color: #1a1a1a;
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+.navegacion .lista {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navegacion .logo a {
+    display: inline-block;
+    color: white;
+    font-family: 'Parisienne', cursive;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.navegacion a {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.navegacion .item {
+    width: 100%;
+    text-align: center;
+    order: 6;
+    display: none;
+}
+
+.navegacion .icon-menu {
+    order: 2;
+}
+
+.navegacion .hamburguesa {
+    width: 4em;
+    color: white;
+    order: 1;
+    cursor: pointer;
+    text-align: center;
+}
+
+.navegacion a:hover,
+.navegacion .icon-menu:hover,
+.navegacion .hamburguesa:hover {
+    background: none;
+    color: var(--primario);
+    transition: 200ms;
+    background-color: transparent;
+}
+
+.item.active {
+    display: block;
+}
+
+
+/* tablet */
+
+@media all and (min-width:568px) {
+    .navegacion .lista {
+        justify-content: center;
+    }
+    .navegacion .logo {
+        flex: 1;
+    }
+    .navegacion .item {
+        background: none;
+    }
+    .navegacion .icon-menu {
+        order: 1;
+        display: block;
+        border-bottom: none;
+        text-align: center;
+        width: 4em;
+    }
+    .navegacion .hamburguesa {
+        display: block;
+        border-bottom: none;
+        text-align: center;
+        width: 4em;
+    }
+    .navegacion .icon-menu a {
+        text-decoration: none;
+    }
+    .navegacion .icon-menu .palabra {
+        display: none;
+    }
+    .navegacion .carrito .palabra {
+        display: none;
+    }
+    .navegacion .carrito {
+        order: 1;
+    }
+    .navegacion .hamburguesa {
+        order: 1;
+    }
+}
+
+
+/* desktop */
+
+@media all and (min-width:768px) {
+    .navegacion .item {
+        display: block;
+        width: auto;
+        order: 2;
+    }
+    .navegacion .hamburguesa {
+        display: none;
+    }
+    .navegacion .logo {
+        order: 0;
+    }
+    .navegacion .icon-menu {
+        order: 3;
+    }
+    .navegacion .icon-menu,
+    .navegacion .hamburguesa {
+        width: 4em;
+    }
+}
