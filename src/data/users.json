@@ -1,0 +1,47 @@
+[
+ {
+  "id": 1,
+  "first_name": "Valeria",
+  "last_name": "alsmdkkdkk",
+  "email": "mrishworth0@surveymonkey.com",
+  "password": "S725s5haDw1",
+  "category": "user",
+  "image": "https://robohash.org/hicquoqui.png?size=50x50&set=set1"
+ },
+ {
+  "id": 2,
+  "first_name": "Juan",
+  "last_name": "Ssksms",
+  "email": "msuspslss1@ucoz.ru",
+  "password": "hIWJsG",
+  "category": "user",
+  "image": "https://robohash.org/numquamconsequaturest.png?size=50x50&set=set1"
+ },
+ {
+  "id": 3,
+  "first_name": "Valeria",
+  "last_name": "Yashan",
+  "email": "valeriayashan@hotmail.com",
+  "password": "$2b$10$8nLBbq1FeDhdcqt8EnbYVuji4TsKBwM7U3mDKUdp42iV5XvjOcgaG",
+  "category": "user",
+  "image": "img-valeria-19800.png"
+ },
+ {
+  "id": 4,
+  "first_name": "MARCOS",
+  "last_name": "TORRES",
+  "email": "marcosfederico@gmail.com",
+  "password": "$2b$10$im0MBVVm9Zgo.ipcTQ6HueiN4f7cJt5Y1kAVsxaxjBWkZ2YtQb5Ma",
+  "category": "user",
+  "image": "img-marcos-80647.jpeg"
+ },
+ {
+  "id": 5,
+  "first_name": "Felicitas",
+  "last_name": "Torres",
+  "email": "felitorres@gmail.com",
+  "password": "$2b$10$r/Or4sNfimRTc1eU6g6XvuGNlwfby2OMkMPxSsAmnXXQjW31Q5wVK",
+  "category": "user",
+  "image": "img-felicitas-69758.jpg"
+ }
+]

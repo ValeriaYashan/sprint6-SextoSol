@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head.ejs') %>
+    <link rel="stylesheet" href="/css/create.css">
+  
+    <title>Agregar productos</title>
+</head>
+<body>
+    <%- include('../partials/header') %>
+    <main>
+        <h1>Agregar producto</h1>
+        <div class="add-product">
+                <form action="/products" method="POST" enctype="multipart/form-data">
+    
+                    <section class="nombre">
+                        <label for="nombre">Nombre del producto: </label>
+                        <input type="text" name ="name" id="nombre" placeholder="Nombre">
+                    </section>
+    
+                    <section class="categoria">
+                    <label for="categoria">Categoría: </label>
+                    <div class="cat-opcion">
+                        <input type="radio" name="category" id = "sinflor" value="sinflor" checked>
+                        <label for="sinflor">Plantas sin flor</label>
+                        <div class="cat-opcion">
+                            <input type="radio" name="category" id = "conflor" value="conflor"> 
+                            <label for="conflor">Plantas con flor</label>
+                        </div>
+                    </section>
+
+                    <section class="descripcion">  
+                        <label for="descripcion">Descripción:</label>
+                        <textarea name ="description" id="descripcion" rows="5" placeholder="Escribe una breve descripción"></textarea>
+                    </section>
+    
+                    <section class="precio">
+                        <label for="precio">Precio: $</label>
+                        <input type="text" name ="price" id="precio">
+                    </section>
+
+                  
+                    <section class="materials">
+                        <p><strong>Material de la maceta:</strong></p>
+                        <label for="materials"> </label>
+                        <div class="mat-opcion">
+                            <input type="radio" name="materials" id = "porcelana" value="porcelana" checked>
+                            <label for="Porcelana">Porcelana</label>
+                        </div>
+                        <div class="mat-opcion">
+                            <input type="radio" name="materials" id = "cerámica" value="cerámica"> 
+                            <label for="Cerámica">Cerámica</label>
+                        </div>
+                        <div class="mat-opcion">
+                            <input type="radio" name="materials" id = "plástico" value="plástico">
+                            <label for="Plástico"> Plástico</label>
+                        </div>
+                    </section>
+    
+                    <p><strong>Tamaño de maceta y cantidad de cada una:</strong></p>
+                            
+                    <div class="tallas-text">
+                        <div class="quant">
+                            <label for="quantityS">S:</label>
+                            <input type="number" name ="quantityS" id="quantityS" value=0 min="0">
+                        </div>
+                        <div class="quant">
+                            <label for="quantityM">M:</label>
+                            <input type="number" name ="quantityM" id="quantityM" value=0 min="0">
+                        </div>
+                        <div class="quant">
+                            <label for="quantityL">L:</label>
+                            <input type="number" name ="quantityL" id="quantityL" value=0 min="0">
+                        </div>   
+                    </div>                         
+                    </section>
+                    <section class="agregar-img">
+                        <p><strong>Imágenes:</strong></p>
+                        <div class="imagenes">
+                            <ul>
+                                <li>
+                                    <input type="file" name="upload_img" id="upload_img" placeholder="Subir">
+                                    <label for="upload_img">Upload Image1</label>
+                                </li>
+        
+                            </ul> 
+                        </div>
+                    </section>                   
+                    <section class="botones">
+                        <button>Cancelar la operación</button>
+                        <button  type="reset">Borrar </button>
+                        <button type="submit">Guardar producto ingresado</button>
+                    </section>
+                </form>
+        </div>
+    </main>
+</body>
+
+
+
+            </main>
+            <%- include("../partials/footer.ejs")%>
+    </body>
+
+
+
+</html>
